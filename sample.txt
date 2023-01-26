@@ -1,0 +1,147 @@
+// a^n b^n e
+// input:
+
+(q0, a) -> (q1, x, R)
+(q0, b) -> (q3, b, R)
+(q0, y) -> (q3, y, R)
+(q1, a) -> (q1, a, R)
+(q1, y) -> (q1, y, R)
+(q1, b) -> (q2, y, L)
+(q2, a) -> (q2, a, L)
+(q2, y) -> (q2, y, L)
+(q2, x) -> (q0, x, R)
+(q3, y) -> (q3, y, R)
+(q3, e) -> (q4, e, R)
+end
+q4
+end
+end
+aaaabbbbe
+
+
+output:
+~~~ aaaabbbbe index: 0
+	 ~~~ (q0, a)
+	 ~~~ rule:(q0, a) -> (q1, x, R)
+	 ~~~ xaaabbbbe index: 1
+	 ~~~ (q1, a)
+	 ~~~ rule:(q1, a) -> (q1, a, R)
+	 ~~~ xaaabbbbe index: 2
+	 ~~~ (q1, a)
+	 ~~~ rule:(q1, a) -> (q1, a, R)
+	 ~~~ xaaabbbbe index: 3
+	 ~~~ (q1, a)
+	 ~~~ rule:(q1, a) -> (q1, a, R)
+	 ~~~ xaaabbbbe index: 4
+	 ~~~ (q1, b)
+	 ~~~ rule:(q1, b) -> (q2, y, L)
+	 ~~~ xaaaybbbe index: 3
+	 ~~~ (q2, a)
+	 ~~~ rule:(q2, a) -> (q2, a, L)
+	 ~~~ xaaaybbbe index: 2
+	 ~~~ (q2, a)
+	 ~~~ rule:(q2, a) -> (q2, a, L)
+	 ~~~ xaaaybbbe index: 1
+	 ~~~ (q2, a)
+	 ~~~ rule:(q2, a) -> (q2, a, L)
+	 ~~~ xaaaybbbe index: 0
+	 ~~~ (q2, x)
+	 ~~~ rule:(q2, x) -> (q0, x, R)
+	 ~~~ xaaaybbbe index: 1
+	 ~~~ (q0, a)
+	 ~~~ rule:(q0, a) -> (q1, x, R)
+	 ~~~ xxaaybbbe index: 2
+	 ~~~ (q1, a)
+	 ~~~ rule:(q1, a) -> (q1, a, R)
+	 ~~~ xxaaybbbe index: 3
+	 ~~~ (q1, a)
+	 ~~~ rule:(q1, a) -> (q1, a, R)
+	 ~~~ xxaaybbbe index: 4
+	 ~~~ (q1, y)
+	 ~~~ rule:(q1, y) -> (q1, y, R)
+	 ~~~ xxaaybbbe index: 5
+	 ~~~ (q1, b)
+	 ~~~ rule:(q1, b) -> (q2, y, L)
+	 ~~~ xxaayybbe index: 4
+	 ~~~ (q2, y)
+	 ~~~ rule:(q2, y) -> (q2, y, L)
+	 ~~~ xxaayybbe index: 3
+	 ~~~ (q2, a)
+	 ~~~ rule:(q2, a) -> (q2, a, L)
+	 ~~~ xxaayybbe index: 2
+	 ~~~ (q2, a)
+	 ~~~ rule:(q2, a) -> (q2, a, L)
+	 ~~~ xxaayybbe index: 1
+	 ~~~ (q2, x)
+	 ~~~ rule:(q2, x) -> (q0, x, R)
+	 ~~~ xxaayybbe index: 2
+	 ~~~ (q0, a)
+	 ~~~ rule:(q0, a) -> (q1, x, R)
+	 ~~~ xxxayybbe index: 3
+	 ~~~ (q1, a)
+	 ~~~ rule:(q1, a) -> (q1, a, R)
+	 ~~~ xxxayybbe index: 4
+	 ~~~ (q1, y)
+	 ~~~ rule:(q1, y) -> (q1, y, R)
+	 ~~~ xxxayybbe index: 5
+	 ~~~ (q1, y)
+	 ~~~ rule:(q1, y) -> (q1, y, R)
+	 ~~~ xxxayybbe index: 6
+	 ~~~ (q1, b)
+	 ~~~ rule:(q1, b) -> (q2, y, L)
+	 ~~~ xxxayyybe index: 5
+	 ~~~ (q2, y)
+	 ~~~ rule:(q2, y) -> (q2, y, L)
+	 ~~~ xxxayyybe index: 4
+	 ~~~ (q2, y)
+	 ~~~ rule:(q2, y) -> (q2, y, L)
+	 ~~~ xxxayyybe index: 3
+	 ~~~ (q2, a)
+	 ~~~ rule:(q2, a) -> (q2, a, L)
+	 ~~~ xxxayyybe index: 2
+	 ~~~ (q2, x)
+	 ~~~ rule:(q2, x) -> (q0, x, R)
+	 ~~~ xxxayyybe index: 3
+	 ~~~ (q0, a)
+	 ~~~ rule:(q0, a) -> (q1, x, R)
+	 ~~~ xxxxyyybe index: 4
+	 ~~~ (q1, y)
+	 ~~~ rule:(q1, y) -> (q1, y, R)
+	 ~~~ xxxxyyybe index: 5
+	 ~~~ (q1, y)
+	 ~~~ rule:(q1, y) -> (q1, y, R)
+	 ~~~ xxxxyyybe index: 6
+	 ~~~ (q1, y)
+	 ~~~ rule:(q1, y) -> (q1, y, R)
+	 ~~~ xxxxyyybe index: 7
+	 ~~~ (q1, b)
+	 ~~~ rule:(q1, b) -> (q2, y, L)
+	 ~~~ xxxxyyyye index: 6
+	 ~~~ (q2, y)
+	 ~~~ rule:(q2, y) -> (q2, y, L)
+	 ~~~ xxxxyyyye index: 5
+	 ~~~ (q2, y)
+	 ~~~ rule:(q2, y) -> (q2, y, L)
+	 ~~~ xxxxyyyye index: 4
+	 ~~~ (q2, y)
+	 ~~~ rule:(q2, y) -> (q2, y, L)
+	 ~~~ xxxxyyyye index: 3
+	 ~~~ (q2, x)
+	 ~~~ rule:(q2, x) -> (q0, x, R)
+	 ~~~ xxxxyyyye index: 4
+	 ~~~ (q0, y)
+	 ~~~ rule:(q0, y) -> (q3, y, R)
+	 ~~~ xxxxyyyye index: 5
+	 ~~~ (q3, y)
+	 ~~~ rule:(q3, y) -> (q3, y, R)
+	 ~~~ xxxxyyyye index: 6
+	 ~~~ (q3, y)
+	 ~~~ rule:(q3, y) -> (q3, y, R)
+	 ~~~ xxxxyyyye index: 7
+	 ~~~ (q3, y)
+	 ~~~ rule:(q3, y) -> (q3, y, R)
+	 ~~~ xxxxyyyye index: 8
+	 ~~~ (q3, e)
+	 ~~~ rule:(q3, e) -> (q4, e, R)
+accept
+	 ~~~ xxxxyyyye index: 9
